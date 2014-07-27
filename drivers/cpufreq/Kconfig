@@ -148,6 +148,12 @@ config CPU_FREQ_DEFAULT_GOV_INTELLIDEMAND
 	  Use the CPUFreq governor 'intellidemand' as default. This is
 	  based on Ondemand with browsing detection based on GPU loading 
 
+config CPU_FREQ_DEFAULT_GOV_HOTPLUG
+	bool "hotplug"
+	select CPU_FREQ_GOV_HOTPLUG
+	help
+	  Use the CPUFreq governor 'hotplug' as default. 
+
 endchoice
 
 config CPU_FREQ_GOV_PERFORMANCE
@@ -311,6 +317,12 @@ config CPU_FREQ_GOV_INTELLIDEMAND
 	  For details, take a look at linux/Documentation/cpu-freq.
 	
 	  If in doubt, say N.
+
+config CPU_FREQ_GOV_HOTPLUG
+	tristate "'hotplug' cpufreq policy governor"
+	select CPU_FREQ_TABLE
+	help
+	  Activate the compilation of the CPU governor 'hotplug'
 
 menu "x86 CPU frequency scaling drivers"
 depends on X86
