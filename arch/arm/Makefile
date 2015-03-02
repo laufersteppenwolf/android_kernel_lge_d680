@@ -237,7 +237,7 @@ platdirs := $(patsubst %,arch/arm/plat-%/,$(plat-y))
 ifeq ($(strip $(KBUILD_OUTPUT_SUPPORT)),yes)
 include $(srctree)/mediatek/Makefile
 else
-include ../mediatek/build/kernel/Makefile
+include mediatek/build/kernel/Makefile
 endif
 
 ifeq ($(KBUILD_SRC),)

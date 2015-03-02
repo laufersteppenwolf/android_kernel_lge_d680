@@ -38,7 +38,7 @@
 #include "dbg.h"
 
 #include <linux/proc_fs.h>
-#include "../../../../../../kernel/drivers/mmc/card/queue.h"
+#include "../../../../../drivers/mmc/card/queue.h"
 #include "partition_define.h"
 #include "mach/mt_clkmgr_internal.h"
 #include <mach/mt_storage_logger.h>

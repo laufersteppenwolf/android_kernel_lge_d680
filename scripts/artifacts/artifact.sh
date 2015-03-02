@@ -41,7 +41,7 @@ if [ -z "$flag" ];then
     exit 1
 fi
 
-prjConfig="../mediatek/config/$2/ProjectConfig.mk"
+prjConfig="mediatek/config/$2/ProjectConfig.mk"
 if [ ! -e "${prjConfig}" ]; then
     echo "Error!the argument $2 is not a correct project name!"
     echo "please enter -h for help infomation!"
@@ -67,15 +67,15 @@ fi
 rm -rf $outdir_obj
 mkdir -p $outdir_obj
 
-cp -f ../mediatek/platform/mt6516/kernel/core/ccci*o $outdir_obj
-cp -f ../mediatek/platform/mt6516/kernel/core/prebuilt/ccci_fs_utils.o $outdir_obj
-cp -f ../mediatek/platform/mt6516/kernel/core/MT6516_PM_api.o $outdir_obj
-cp -f ../mediatek/platform/mt6516/kernel/core/mt6516_intr.o $outdir_obj
-cp -f ../mediatek/platform/mt6516/kernel/core/MT6516_sleep.o $outdir_obj
-#touch ../mediatek/platform/mt6516/kernel/core/aed.o
-#cp -f ../mediatek/source/kernel/drivers/aee/aed.o $outdir_obj
-if [ -e ../mediatek/source/kernel/drivers/net/mt592x/wlan/gl_sec.o ]; then
-  cp -f ../mediatek/source/kernel/drivers/net/mt592x/wlan/gl_sec.o $outdir_obj
+cp -f mediatek/platform/mt6516/kernel/core/ccci*o $outdir_obj
+cp -f mediatek/platform/mt6516/kernel/core/prebuilt/ccci_fs_utils.o $outdir_obj
+cp -f mediatek/platform/mt6516/kernel/core/MT6516_PM_api.o $outdir_obj
+cp -f mediatek/platform/mt6516/kernel/core/mt6516_intr.o $outdir_obj
+cp -f mediatek/platform/mt6516/kernel/core/MT6516_sleep.o $outdir_obj
+#touch mediatek/platform/mt6516/kernel/core/aed.o
+#cp -f mediatek/source/kernel/drivers/aee/aed.o $outdir_obj
+if [ -e mediatek/source/kernel/drivers/net/mt592x/wlan/gl_sec.o ]; then
+  cp -f mediatek/source/kernel/drivers/net/mt592x/wlan/gl_sec.o $outdir_obj
 fi
 if [[ $1 == "other" ]]; then
   cp -f arch/arm/mach-mt6516/core.o $outdir_obj

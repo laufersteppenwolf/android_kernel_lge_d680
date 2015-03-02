@@ -44,6 +44,7 @@ modules.builtin
 /System.map
 /Module.markers
 /Module.symvers
+out/
 
 #
 # Debian directory (make deb-pkg)
@@ -84,6 +85,3 @@ GTAGS
 *.orig
 *~
 \#*#
-
-# output dir
-out

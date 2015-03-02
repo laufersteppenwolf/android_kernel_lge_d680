@@ -33,7 +33,7 @@
 # have been modified by MediaTek Inc. All revisions are subject to any receiver's
 # applicable license agreements with MediaTek Inc.
 
-source ../mediatek/build/shell.sh ../ kernel
+source mediatek/build/shell.sh ../ kernel
 
 # Default settings
 verfile="android.ver"

@@ -29,7 +29,7 @@
 #include "mt_sd.h"
 #include <sd_misc.h>
 #include "board-custom.h"
-#include "../../../../../../kernel/drivers/mmc/card/queue.h"
+#include "../../../../../drivers/mmc/card/queue.h"
 
 
 #include <linux/proc_fs.h>

@@ -3,7 +3,7 @@
 
 obj_to_install :=
 MTK_PROJECT_FLAVOR := $(MTK_PROJECT)
-ifeq (,$(wildcard ../mediatek/build/android/full/config.mk))
+ifeq (,$(wildcard mediatek/build/android/full/config.mk))
 ifneq (,$(FLAVOR))
 MTK_PROJECT_FLAVOR := $(MTK_PROJECT)[$(FLAVOR)]
 endif

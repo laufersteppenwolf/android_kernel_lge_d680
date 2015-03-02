@@ -2336,5 +2336,5 @@ source "lib/Kconfig"
 
 source "drivers/nfc/Kconfig"
 
-source "../mediatek/kernel/Kconfig"
+source "mediatek/kernel/Kconfig"
 

@@ -466,6 +466,6 @@ endif
 
 .PHONY: $(PHONY)
 
-ifeq (,$(wildcard ../mediatek/build/android/full/config.mk))
+ifeq (,$(wildcard mediatek/build/android/full/config.mk))
 include scripts/artifacts/Makefile
 endif
