@@ -29,6 +29,7 @@ mkdir out
 mkdir out/modules
 cp arch/arm/boot/zImage out/zImage
 # Find and copy modules
+find ./block -name '*.ko' | xargs -I {} cp {} ./out/modules/
 find ./drivers -name '*.ko' | xargs -I {} cp {} ./out/modules/
 find ./mediatek -name '*.ko' | xargs -I {} cp {} ./out/modules/
 
