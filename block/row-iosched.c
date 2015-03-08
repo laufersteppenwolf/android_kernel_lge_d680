@@ -723,5 +723,5 @@ static void __exit row_exit(void)
 module_init(row_init);
 module_exit(row_exit);
 
-MODULE_LICENSE("GPLv2");
+MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("Read Over Write IO scheduler");
